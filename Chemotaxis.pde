@@ -9,7 +9,7 @@ void setup()
  }   
  }
  void draw()   
- {  
+ {    
    background(250,0,0);
      for (int s =0; s<skylar.length; s++){
    
@@ -30,15 +30,16 @@ void setup()
    
    
    Bacteria(){
-     
+     X=200;
+     Y=200;
      
    
  }
    void move()
  {
    
-    X = X + (int)(Math.random()*5-1);
-    Y = Y + (int)(Math.random()*5-2);
+    X = X + (int)(Math.random()*3)-1;
+    Y = Y + (int)(Math.random()*3)-1;
  }
  void show()
  {
